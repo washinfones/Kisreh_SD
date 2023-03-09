@@ -63,7 +63,7 @@
         }
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[35.28757877785005,39.54053666928595],[36.18715298720195,40.60772591228385]]);
+        }).fitBounds([[35.38633374996567,39.70726909591395],[36.003015770833414,40.62102117644252]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -1175,7 +1175,7 @@
             iconUrl: 'markers/water-trucking.svg',
             iconSize: [26.599999999999998, 26.599999999999998]
         }),
-                interactive: true,
+                interactive: false,
             }
         }
         map.createPane('pane_FillingPoints_10');
@@ -1183,7 +1183,7 @@
         map.getPane('pane_FillingPoints_10').style['mix-blend-mode'] = 'normal';
         var layer_FillingPoints_10 = new L.geoJson(json_FillingPoints_10, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_FillingPoints_10',
             layerName: 'layer_FillingPoints_10',
             pane: 'pane_FillingPoints_10',
@@ -1236,7 +1236,7 @@
             iconUrl: 'markers/poi_tower_water.svg',
             iconSize: [25.08, 25.08]
         }),
-                interactive: true,
+                interactive: false,
             }
         }
         map.createPane('pane_water_towers_11');
@@ -1244,7 +1244,7 @@
         map.getPane('pane_water_towers_11').style['mix-blend-mode'] = 'normal';
         var layer_water_towers_11 = new L.geoJson(json_water_towers_11, {
             attribution: '',
-            interactive: true,
+            interactive: false,
             dataVar: 'json_water_towers_11',
             layerName: 'layer_water_towers_11',
             pane: 'pane_water_towers_11',
